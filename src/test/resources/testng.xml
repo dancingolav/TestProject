@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll">
+
+    <test name="TryingEpamSiteFirstTest">
+        <!--"browser", "pathToDriver" Use one of parameters' set ro run
+        test with browser of your choice
+             ===============================================================================
+            "firefox", "D:\PersonalDrivers\geckodriver.exe"
+            <parameter name="browser"  value="firefox"/>
+            <parameter name="pathToDriver"  value="D:\PersonalDrivers\geckodriver.exe"/>
+             ================================================================================
+            "chrome", "D:\PersonalDrivers\chromedriver.exe"
+            <parameter name="browser"  value="chrome"/>
+            <parameter name="pathToDriver"  value="D:\PersonalDrivers\chromedriver.exe"/>
+             ================================================================================
+             "ie", "D:\PersonalDrivers\IEDriverServer.exe"
+             <parameter name="browser"  value="ie"/>
+             <parameter name="pathToDriver"  value="D:\PersonalDrivers\IEDriverServer.exe"/>
+             =================================================================================
+            "opera","D:\PersonalDrivers\operadriver.exe"
+             <parameter name="browser"  value="opera"/>
+             <parameter name="pathToDriver"  value="D:\PersonalDrivers\operaserver.exe"/>
+
+        -->
+        <parameter name="browser"  value="chrome"/>
+        <parameter name="pathToDriver"  value="D:\PersonalDrivers\chromedriver.exe"/>
+        <classes>
+            <class name= "org.epamqa.training.test.TryingEpamSiteTest" />
+        </classes>
+    </test>
+
+    <!-- You can run one more test or the same test with different browser
+    <test name="TryingEpamSiteSecondTest2">
+        <parameter name="browser"  value="opera"/>
+        <parameter name="pathToDriver"  value="D:\PersonalDrivers\operaserver.exe"/>
+        <classes>
+            <class name="org.epamqa.training.test.TryingEpamSiteTest2" />
+        </classes>
+    </test>
+    -->
+
+</suite>
