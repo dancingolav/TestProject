@@ -13,12 +13,12 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.io.File;
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
-import static com.google.common.io.Files.isDirectory;
+
 import static org.testng.Assert.assertTrue;
 
 
@@ -84,10 +84,6 @@ public class TryingEpamSiteTest {
         }
 
 
-        /*myPersonalDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        myPersonalDriver.get("https://jdi-framework.github.io/tests/");
-        myPersonalDriver.manage().window().maximize();
-        */
 
         System.out.println(browser+" "+pathToDriver);
 
@@ -146,14 +142,8 @@ public class TryingEpamSiteTest {
     @Test (dataProvider="rightdataforlogin")
     public void goodLogin(String accountName, String accountPwd) {
         System.out.println("logging into the account");
-/*
-        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-<div class="profile-photo">
-<i class="fa fa-user"></i>
-<img src="images/icons/no_photo.png" alt="" style="display: none;">
-<span class="hidden">Piter Chailovskii</span>
-*/
-        if (myPersonalDriver.findElements(By.xpath("//li[@class='dropdown uui-profile-menu open']")).size()==0)
+
+     if (myPersonalDriver.findElements(By.xpath("//li[@class='dropdown uui-profile-menu open']")).size()==0)
             myPersonalDriver.findElement(By.xpath("//a[@class='dropdown-toggle'][@href='#']")).click();
 
 
@@ -170,9 +160,7 @@ public class TryingEpamSiteTest {
         myPersonalDriver.findElement(By.xpath("//button[@class='uui-button dark-blue btn-login']/span[text()='Enter']")).click();
 
         //Is login passed? It has to be.
-         //assertTrue(myPersonalDriver.findElements(By.xpath("//button[@class='uui-button dark-blue btn-login']/span[text()='Logout'")).size() != 0);
 
-        //assertTrue(myPersonalDriver.findElements(By.xpath("//span[@class='login-txt'][text()='* Login Faild']")).size() == 0);
         assertTrue(myPersonalDriver.findElements(By.xpath("//span[@class=''][text()='Piter Chailovskii']")).size() != 0);
     }
 
