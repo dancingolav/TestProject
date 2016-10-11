@@ -4,7 +4,7 @@
 
     <test name="TryingEpamSiteFirstTest">
         <!--"browser", "pathToDriver" Use one of parameters' set ro run
-        test with browser of your choice
+        test with browser of your choice. Don't forgot to make change to proper driver's directory!
              ===============================================================================
             "firefox", "D:\PersonalDrivers\geckodriver.exe"
             <parameter name="browser"  value="firefox"/>
