@@ -22,7 +22,12 @@ This is a test project
 
 Следующие описания зависимостей должны присутствовать в файле POM.XML для сборки теста. Они добавят новые или перепишут зависимости используемые по умолчанию. Для справки см. в IntelliJ Idea: Maven -> Maven Effective POM
 
-org.testng testng 6.8 test
+       <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8</version>
+            <scope>test</scope>
+        </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>
@@ -31,7 +36,7 @@ org.testng testng 6.8 test
         <version>3.0.0-beta4</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/commons-lang/commons-lang -->
+   
 
     <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
     <dependency>
