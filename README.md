@@ -21,7 +21,10 @@ I. СБОРКА ТЕСТА: НАСТРОЙКА POM.XML</br>
 1.1 ЗАВИСИМОСТИ (dependencies)
 
 Следующие описания зависимостей должны присутствовать в файле POM.XML для сборки теста. Они добавят новые или перепишут зависимости используемые по умолчанию. Для справки см. в IntelliJ Idea: Maven -> Maven Effective POM
-<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+
+
+
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
        <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
