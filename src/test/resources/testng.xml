@@ -20,7 +20,7 @@
              =================================================================================
             "opera","D:\PersonalDrivers\operadriver.exe"
              <parameter name="browser"  value="opera"/>
-             <parameter name="pathToDriver"  value="D:\PersonalDrivers\operaserver.exe"/>
+             <parameter name="pathToDriver"  value="D:\PersonalDrivers\operadriver.exe"/>
 
         -->
         <parameter name="browser"  value="chrome"/>

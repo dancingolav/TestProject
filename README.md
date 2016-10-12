@@ -103,4 +103,4 @@ name="pathToDriver" value="D:\PersonalDrivers\IEDriverServer.exe"
 
 Для Opera:
 name="browser" value="opera"
-name="pathToDriver" value="D:\PersonalDrivers\operaserver.exe
+name="pathToDriver" value="D:\PersonalDrivers\operadriver.exe
