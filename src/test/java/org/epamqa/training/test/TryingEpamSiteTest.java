@@ -125,7 +125,7 @@ public class TryingEpamSiteTest {
 
         myPersonalDriver.findElement(By.xpath("//button[@class='uui-button dark-blue btn-login']/span[text()='Enter']")).click();
 
-        //Is login failed? It has to be.
+        //Is login failed? It has to be...
         assertTrue(myPersonalDriver.findElements(By.xpath("//span[@class='login-txt'][text()='* Login Faild']")).size() != 0);
 
 
