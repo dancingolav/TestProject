@@ -84,7 +84,7 @@ public class EpamTest {
 
         System.out.println(browser + " " + pathToDriver);
 
-        myPersonalDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        myPersonalDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         myPersonalDriver.get("https://jdi-framework.github.io/tests/");
         myPersonalDriver.manage().window().maximize();
 
