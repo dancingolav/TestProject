@@ -49,7 +49,7 @@ public class EpamTest {
         };
         //Checking whether file is exist
         File f = new File(pathToDriver);
-        if (!f.exists() | f.isDirectory()) {
+        if (!f.exists() || f.isDirectory()) {
             System.out.println("Error! Check your browser's path in testng.xml!");
             Assert.fail("Error! Check your browser's path in testng.xml!");
         }
