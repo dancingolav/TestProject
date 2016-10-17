@@ -26,7 +26,7 @@
         <parameter name="browser"  value="chrome"/>
         <parameter name="pathToDriver"  value="D:\PersonalDrivers\chromedriver.exe"/>
         <classes>
-            <class name= "org.epamqa.training.test.TryingEpamSiteTest" />
+            <class name= "org.epamqa.training.test.EpamTest" />
         </classes>
     </test>
 
